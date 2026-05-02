@@ -1,0 +1,205 @@
+\documentclass{resume}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{etaremune}
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=[rgb]{0.6,0.1,0.12}
+}
+\urlstyle{same}
+
+\setlist[itemize,2]{label={$\bullet$}} 
+
+\renewcommand*{\labelenumi}{[\labelprefix\theenumi]}
+\def\labelprefix{C}
+
+\name{A\lowercase{nthony} L\lowercase{iang}}
+\address{\href{https://aliang8.github.io}{\texttt{aliang8.github.io}} \\ \texttt{anthony.liang@usc.edu}}
+\address{\href{https://linkedin.com/in/ant-liang}{\texttt{linkedin.com/in/ant-liang}}}
+
+\begin{document}
+
+\begin{rSection}{Research Interests}
+My research focuses on scalable robot learning, with an emphasis on data-efficient human feedback (gaze, demonstrations, preferences, interventions) and reward foundation models that provide generalizable reward functions across tasks, embodiments, and environments. I also work on core components for embodied intelligence, including vision-language-action models for low-level control, trace models for structured planning, and world models for scene understanding and predictive reasoning. In parallel, I am investigating RL post-training for LLM-based web agents to improve reliability in sequential UI tasks and long-horizon interactions. 
+% This line of work parallels robot learning through shared challenges in reinforcement learning and human feedback.
+\end{rSection}
+
+\begin{rSection}{Education}
+\begin{rSubsection}{University of Southern California, {\normalfont Los Angeles, CA}}{Aug 2021 - Present}{Ph.D. {\normalfont in Computer Science (Co-advised by Erdem Bıyık and Stephen Tu)}}{GPA: 3.9/4.0}
+\item[]
+\end{rSubsection}
+\begin{rSubsection}{University of Michigan Rackham Graduate School, {\normalfont Ann Arbor, MI}}{Aug 2017 - 2021}{M.S. {\normalfont in Robotics (Advisor: Honglak Lee)}}{GPA: 4.0/4.0}
+\item[]
+\end{rSubsection}
+\begin{rSubsection}{University of Michigan, {\normalfont Ann Arbor, MI}}{Aug 2017 - 2021}{B.S.E. {\normalfont (Advisor: Honglak Lee)}}{GPA: 3.65/4.0}
+\item[]
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Research Experience}
+\begin{rSubsection}{LiRA Lab and Statistical Learning Lab, {\normalfont USC}}{Aug 2021 - Present}{Ph.D. Student, PI: Erdem Bıyık, Stephen Tu}{}
+\item Robot learning with multimodal human feedback, sample-efficient RL, learning from unlabelled videos
+\end{rSubsection}
+\begin{rSubsection}{Intelligent Robot Lab, {\normalfont Carnegie Mellon}}{May 2020 - May 2021}{Visiting Researcher {\normalfont with Changliu Liu}}{}
+\item Hierarchical RL for safe control of autonomous vehicles in dynamic environments
+\end{rSubsection}
+\begin{rSubsection}{Deep Learning Lab, {\normalfont University of Michigan}}{Jan 2019 - May 2021}{Research Intern {\normalfont with Honglak Lee}}{}
+\item Sample-efficient RL for embodied task learning
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Professional Experience}
+\begin{rSubsection}{Google DeepMind}{May 2025 - Sept 2025}{Research Intern {\normalfont with Kalpesh Krishna, Jacob Eisenstein}}{NYC/Seattle}
+\item RL post-training for reasoning models
+\end{rSubsection}
+\begin{rSubsection}{Google Research}{May 2023 - Feb 2024}{Research Intern {\normalfont with Chih-Wei Hsu, Yinlam Chow, Guy Tennenholtz, Craig Boutilier}}{Remote NYC}
+\item Bayesian RL for Markov Decision Processes with gradually changing latent dynamics
+\item Data augmentation at critical states for robot imitation learning with Stephen Tu
+\item Generative modeling for online RL policies
+\end{rSubsection}
+\begin{rSubsection}{Meta AI - Multimodal Learning Team}{May 2022 - Aug 2022}{Research Intern {\normalfont with Paul Crook and Andrea Madatto}}{Redmond, WA}
+\item Fine-tuning large language models for task-oriented dialogue generation
+\end{rSubsection}
+\begin{rSubsection}{Amazon Science}{May 2021 - Aug 2021}{Applied Science Intern {\normalfont with Thiago Mosquiero}}{Seattle, WA}
+\item Collaborative filtering for recommending new brands and products to consumers
+\end{rSubsection}
+\begin{rSubsection}{Invisible.ai}{May 2020 - Aug 2020}{AI Research Intern}{Remote}
+\item Improving computer vision models for real-time object detection and tracking for industrial processes
+\end{rSubsection}
+\begin{rSubsection}{Google Ads}{May 2019 - Aug 2019}{Software Engineering Intern}{Mountain View, CA}
+\item[]
+\end{rSubsection}
+\begin{rSubsection}{Luminar Technologies}{May 2018 - Aug 2018}{Software Engineering Intern}{Palo Alto, CA}
+\item[]
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Publications}
+\begin{etaremune}
+% \item \textcolor{purple}{Anthony Liang}$^{*}$, Robby Costales$\text{*}$, Sankalp Agrawal, Erdem Bıyık, Stefanos Nikolaidis. ``VarIMPORT: Task Descriptors for Improved Meta-Reinforcement Learning'', \textit{In preparation}
+
+\item \textcolor{purple}{Anthony Liang}$^{*}$, Yigit Korkmaz$^{*}$, Jiahui Zhang, Minyoung Hwang, Abrar Anwar, Sid Kaushik, Aditya Shah, Alex Huang, Luke Zettlemoyer, Dieter Fox, Yu Xiang, Anqi Li, Andreea Bobu, Abhishek Gupta, Stephen Tu$^{\dag}$, Erdem Bıyık$^{\dag}$, Jesse Zhang$^{\dag}$. "Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory Comparisons". \textit{Robotics: Science and Systems (RSS) 2026}
+
+\item \textcolor{purple}{Anthony Liang}, Jonathan Berant, Adam Fisch, Abhimanyu Goyal, Kalpesh Krishna$^{\dag}$, Jacob Eisenstein$^{\dag}$. "Plantain: Plan-Answer Interleaved Reasoning". \textit{International Conference on Machine Learning (ICML) 2026 (Spotlight)}
+
+\item Mihir Rao$\text{*}$, \textcolor{purple}{Anthony Liang}$\text{*}$, Abrar Anwar$\text{*}$, Rudy Corona, Giscard Biamby, Dantong Liu, Roei Herzig, Trevor Darrell. "In-Context Learning Trace Model for Robot Learning" \textit{In preparation}
+
+\item Matthew Hong$\text{*}$, \textcolor{purple}{Anthony Liang}$^{*}$, Kevin Kim, Harshitha Rajaprakash, Jesse Thomason$^{\dag}$, Erdem Bıyık$^{\dag}$, Jesse Zhang$^{\dag}$. "HAND Me the Data: Fast Robot Adaptation via Hand Path Retrieval" \textit{International Conference on Robot Automation (ICRA) 2026}
+
+\item Jaiv Doshi$^{*}$, \textcolor{purple}{Anthony Liang}$^{*}$, Yigit Korkmaz, Erdem Bıyık. "RHODES: Reducing Human Oversight via Disagreement and Exploration for Safe Reinforcement Learning" \textit{Preprint}
+
+\item \textcolor{purple}{Anthony Liang}$^{*}$, Pavel Czempin$^{*}$, Matthew Hong, Yutai Zhou, Erdem Bıyık, Stephen Tu. "CLAM: Continuous Latent Action Models for Robot Learning from Unlabeled Demonstrations" \textit{In submission}
+
+\item \textcolor{purple}{Anthony Liang}, Chih-wei Hsu, Yinlam Chow, Guy Tennenholtz, Erdem Bıyık, Craig Boutilier. ``DynaMITE-RL: A Dynamics Model for Improved Temporal Meta Reinforcement Learning'', \textit{International Conference on Machine Learning (ICML) AutoRL Workshop 2024, Conference on Neural Information Processing Systems (NeurIPS) 2024}
+
+\item \textcolor{purple}{Anthony Liang}, Jesse Thomason, Erdem Bıyık. ``ViSaRL: Visual Reinforcement Learning Guided By Human Saliency'', \textit{Spotlight talk at ICRA Pretraining for Robotics (PT4R) Workshop, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2024}
+
+\item Wilka Carvalho, \textcolor{purple}{Anthony Liang}, Kimin Lee, Sungryull Sohn, Honglak Lee, Richard L. Lewis, Satinder Singh. ``Reinforcement Learning for Sparse-Reward Object-Interaction Tasks in a First-person Simulated 3D Environment'', \textit{International Joint Conferences on Artificial Intelligence (IJCAI) 2021}
+\end{etaremune}
+
+\def\labelprefix{T}
+\begin{etaremune}
+\item \textcolor{purple}{Anthony Liang}, Yigit Korkmaz, Jiahui Zhang, Jesse Zhang, Abrar Anwar, Sidhant Kaushik, Yufei Wang, Yu Xiang, David Held, Dieter Fox, Abhishek Gupta, Stephen Tu, Erdem Biyik. "SPUR: Scaling Reward Learning from Human Demonstrations". \textit{CoRL Eval\&Deploy Workshop 2025}
+
+\item \textcolor{purple}{Anthony Liang}, Pavel Czempin, Yutai Zhou, Stephen Tu, Erdem Bıyık. "In-Context Generalization to New Tasks From Unlabeled Observation Data", \textit{ICML In-Context Learning Workshop 2024}
+
+\item Ishika Singh, \textcolor{purple}{Anthony Liang}, Mohit Shridhar, Jesse Thomason. "Self-Supervised 3D Representation Learning for Robotics", \textit{ICRA Pretraining for Robotics (PT4R) 2023}
+
+\item \textcolor{purple}{Anthony Liang}, Ishika Singh, Karl Pertsch, Jesse Thomason. "Transformer Adapters for Robot Learning", \textit{CoRL Workshop on Pretraining for Robot Learning 2022}
+
+\item Wilka Carvalho, \textcolor{purple}{Anthony Liang}, Kimin Lee, Sungryull Sohn, Richard L. Lewis, Satinder Singh, Honglak Lee. "ROMA: A Relational, Object-Model Learning Agent for Sample-Efficient Reinforcement Learning", \textit{ICML Workshop on Object-Oriented Learning 2020}
+\end{etaremune}
+\end{rSection}
+
+\begin{rSection}{Teaching}
+\textbf{University of Southern California} \\
+CSCI 445: Foundation of Robotics \hfill Fall 2026 \\
+CSCI 699: Robot Learning \hfill Fall 2024 \\
+CSCI 499: Natural Language for Interactive AI \hfill Fall 2022 
+
+\textbf{University of Michigan, Ann Arbor} \\ 
+EECS 442: Computer Vision \hfill Winter 2021 \\
+EECS 498: Algorithmic Robotics \hfill Fall 2020 \\
+EECS 504: Graduate Computer Vision \hfill Winter 2020 \\
+EECS 280: Introduction to Programming and Data Structures \hfill Fall 2018 - Fall 2019
+
+Summer STEM Institute Research Mentor \hfill Summer 2021
+\end{rSection}
+
+% \begin{rSection}{Invited Talks}
+% \begin{itemize}
+% \item Apple Robotics 
+% \end{itemize}
+% \end{rSection}
+
+\begin{rSection}{Services}
+\begin{itemize}[leftmargin=*]
+    \item[] \textbf{Reviewer:}
+    \begin{itemize}
+        \item ICML, ICLR, ICRA, NeurIPS, HRI, RA-L, AAAI, RO-MAN, CVPR
+    \end{itemize}
+    
+    \item[] \textbf{Workshop Organizer:}
+    \begin{itemize}
+        \item Human-in-the-Loop Robot Learning: Teaching, Correcting, and Adapting at RSS 2025
+    \end{itemize}
+    
+    \item[] \textbf{Mentorship and Outreach:}
+    \begin{itemize}
+        \item USC UGrad Mentoring Program
+        \item CURVE: Mentored USC undergrads through fellowship program.
+    \end{itemize}
+    
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Student Mentorship}
+\begin{itemize}[leftmargin=*]
+    \item[] \textbf{USC Masters Students}
+    \begin{itemize}
+        \item Matthew Hong \hfill Learning from unlabelled data, RLHF
+        \item Dhanush Kumar Penmetsa \hfill Gaze for robot teleoperation
+        \item Ziyi Liu \hfill Preference-based RL
+    \end{itemize}
+
+    \item[] \textbf{USC Undergraduate Students}
+    \begin{itemize}
+        \item Yixi Quan (Undergrad, USC) \hfill Pretrained Video-LLMs for Robot Learning
+        \item Jaiv Doshi (Undergrad, USC) \hfill Human-intervention reinforcement learning
+        \item Junu Song (USC CURVE Fellowship) \hfill Real-world robot navigation
+    \end{itemize}
+
+    \item[] \textbf{Fellowship Programs and External Collaborators}
+    \begin{itemize}
+        \item Mihir Rao (Undergrad, Berkeley) \hfill Trace VLAs
+        \item Sankalp (Sunny) Agrawal (Undergrad, USC SURE Program) \hfill Meta-RL with task descriptors
+        \item Shreya Ramanujam (Undergrad, IIT) \hfill Gaze for robot teleoperation
+    \end{itemize}
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Invited Talks}
+\begin{itemize}[leftmargin=*]
+\item[] \textbf{"Scaling Reward Models via Preference Comparisons"} \hfill 2026 
+    \begin{itemize}
+        \item Apple Robotics Reading Group \hfill (Host: Soheil Habibian) 
+    \end{itemize}
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Honors and Awards}
+\begin{itemize}
+\item NSF Graduate Research Fellowship Honorable Mention \hfill 2020 
+\end{itemize}
+\end{rSection}
+
+
+\end{document} 
